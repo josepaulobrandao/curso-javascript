@@ -18,9 +18,29 @@ var multiplicacao = num1 * num2;
 
 var media = (num1 + num2) / 2;
 console.log('A média é: ' + media);
+console.log(Math.pow(num1, num2));
 
-console.log(Math.pow(3, 4));
+var increment = 20;
+
+increment+=5;
+
+console.log(increment);
+
+increment = 10;
+increment++;
+
+console.log(increment);
 
 
+var ddd = 21;
+var telefone  = 971946499;
 
+var ddd_string = ddd.toString();
+var tel_string = telefone.toString();
 
+console.log(ddd_string + ' - '+ tel_string);
+
+var converter_idade = '18';
+converter_idade = parseInt(converter_idade);
+converter_idade++;
+console.log(converter_idade);
