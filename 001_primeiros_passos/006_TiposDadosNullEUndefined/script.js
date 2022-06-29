@@ -10,3 +10,7 @@ console.log(temperatura);
 
 temperatura = null;
 console.log(temperatura);
+
+console.log(temperatura == undefined);
+
+console.log(typeof null);
