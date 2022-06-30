@@ -44,12 +44,20 @@ function myFunction2 () {
      document.getElementById("resultado").innerHTML = '<p>' + soma + '</p>';
 }
 */
-let increment = 0;
-let decrement = 0;
 
 
-function incrementButton() {
-    increment++;
+function valor_imc (peso, altura) {
+    var imc = peso / (altura * altura);
+    return imc;
 }
-incrementButton();
 
+
+
+var meu_peso = document.querySelector("#peso").innerHTML;
+var minha_altura = document.querySelector("#altura").innerHTML;
+
+
+var meu_imc = valor_imc(meu_peso, minha_altura);
+document.querySelector("#imc").innerHTML = meu_imc;
+
+console.log(meu_imc)
