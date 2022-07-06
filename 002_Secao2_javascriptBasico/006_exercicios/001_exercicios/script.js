@@ -1,24 +1,18 @@
-var aluno  = {
-    'nome':'Maria',
-    'sobre': 'Pereira',
-    'ano_nasc':1992,
-    'idade_aluno':function() {
-     var calculaIdade = 2022 - this.ano_nasc;
-     return calculaIdade;
-    },
-    'nome_completo':function () {
-        var n_completo = this.nome + " " + this.sobre
-        return n_completo;
-    }
+
+
+function calculadora(numero_1, numero_2) {
+    let calculaSoma = numero_1 +  numero_2
+    return calculaSoma;
 }
 
-console.log(aluno.nome_completo());
-console.log(aluno.idade_aluno() + " Anos");
+let calcula_num_1 = parseInt(document.getElementById("num_1").innerHTML);
+let calcula_num_2 = parseInt(document.getElementById("num_2").innerHTML);
 
-console.log(Math.round(4.5));
+let resultadoFinal = parseInt(calculadora(calcula_num_1, calcula_num_2));
 
-console.log(typeof document.getElementById("tudo_obj").innerHTML);
-window.document.getElementById("tudo_obj");
+let calc_resultado = document.getElementById("resultado").innerHTML = resultadoFinal;
 
-console.log(typeof window.document.getElementById("tudo_obj"));
+
+
+
 
